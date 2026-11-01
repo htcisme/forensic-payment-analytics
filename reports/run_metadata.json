@@ -1,0 +1,40 @@
+{
+  "pipeline_version": "p1_rules_v1",
+  "snapshot_sha256": "b477e61ca2dd3c53359188cb9e7926c76d115e639d3eab0e11a3ae8a755a19a9",
+  "source_files": [
+    "procurement-card-transactions-2026-27.csv"
+  ],
+  "source_rows": 913,
+  "analysis_eligible_rows": 913,
+  "combined_alert_rows": 401,
+  "unique_flagged_transactions": 327,
+  "flagged_value_pence_unique": 3277491,
+  "flagged_value_gbp_unique": 32774.91,
+  "all_rows_net_value_pence": 7484531,
+  "baseline": {
+    "R1": "with_cost_center",
+    "R2": "minimum_3",
+    "R3": "iqr_1.5_min20"
+  },
+  "analysis_scope": "retrospective_full_snapshot",
+  "priority": "rule_count descending, gross_pence descending, date and record_id ascending",
+  "python_version": "3.12.10",
+  "pandas_version": "2.2.2",
+  "sqlite_version": "3.49.1",
+  "sql_sha256": {
+    "03_cost_center_spend.sql": "ea14d3586cd8bcd4dd1482cc84d77a19491f4118522bf34699fdaba3013baca6",
+    "04_expense_type_spend.sql": "880ea3b63b3e93b0e061f8e36293332c12533886b61ac7a2386403e41c5a8c8f",
+    "05_supplier_trend.sql": "1df1a73adcdf5b75caf1c07b3c8bca445430d89065e236800f6d31fa233494e6",
+    "06_r1_similar_payments.sql": "2a4e9119ef381d71200b2df0483b7efc2ac37bfaa389e3e6625eba97d151ccbf",
+    "06b_r1_without_cost_center.sql": "43a6e804c18b275f6bd7e45f612c60e9b3e1b1ded5792f4367f79e8615a90c05",
+    "07_r2_daily_frequency_3.sql": "0cb72491d4a0e2ca02b7510c2a8cc77f0ce43ba3d8c992ce84149de22fe4506d",
+    "08_r2_daily_frequency_5.sql": "39f88a2c190f1d98c4046a6d5835ab49fe59f6990dcf0eb555abefe1b45a95f8"
+  },
+  "engine_sha256": "952ac35d48cff1fe40c77a2271a3d5924b3edc5b5ca3cee889d861f89e91838f",
+  "checks": {
+    "source_rows_preserved": true,
+    "unique_record_rule_pairs": true,
+    "unique_transaction_queue": true,
+    "sensitivity_subset_checks": true
+  }
+}

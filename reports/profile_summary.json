@@ -1,0 +1,26 @@
+{
+  "source_file": "procurement-card-transactions-2026-27.csv",
+  "sha256": "b477e61ca2dd3c53359188cb9e7926c76d115e639d3eab0e11a3ae8a755a19a9",
+  "rows": 913,
+  "columns": [
+    "Body Name",
+    "Date",
+    "Period",
+    "Amount",
+    "Exclusive",
+    "Inclusive",
+    "Supplier Name",
+    "Serivce Area",
+    "Subjective Account",
+    "Expense Type",
+    "Cost Center Name"
+  ],
+  "date_min": "2026-04-01",
+  "date_max": "2026-09-20",
+  "invalid_or_missing_dates": 0,
+  "invalid_or_missing_gross": 0,
+  "negative_gross_rows": 20,
+  "zero_gross_rows": 1,
+  "repeated_rows_after_first": 52,
+  "rows_in_repeated_groups": 94
+}

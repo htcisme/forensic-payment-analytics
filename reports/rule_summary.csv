@@ -1,0 +1,4 @@
+﻿rule_id,configuration,eligible_transactions,denominator_description,flagged_transactions,flagged_groups,flagged_pct_of_eligible,flagged_value_pence,flagged_value_gbp
+R1,with_cost_center,892,positive eligible rows with cost center and expense code,92,41,10.31,728397,7283.97
+R2,minimum_3,892,positive eligible rows with cost center,252,31,28.25,856355,8563.55
+R3,iqr_1.5_min20,635,positive eligible rows in categories with n>=20 and IQR>0,57,7,8.98,2202764,22027.64

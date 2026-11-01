@@ -1,0 +1,71 @@
+﻿expense_type_missing,expense_type,transaction_count,distinct_expense_codes,positive_spend_gbp,negative_entries_gbp,net_spend_gbp
+0,"Purchase - Equipment, Furniture And Materials",204,1,25236.91,-25.74,25211.17
+0,"Advertising, Publicity And Marketing",229,1,8161.06,0.0,8161.06
+0,Public Transport For Staff And Members,39,1,4983.06,-307.1,4675.96
+0,Membership And Subscriptions,26,1,3035.7,0.0,3035.7
+0,Conference Expenses,11,1,2865.4,0.0,2865.4
+0,"Maintenance - Equipment, Furniture And Materials",17,1,2556.16,0.0,2556.16
+0,Assets Under Construction Cost,10,1,2271.0,-47.42,2223.58
+0,Gas,26,1,2149.0,0.0,2149.0
+0,Grounds Maintenance,17,1,1955.16,0.0,1955.16
+0,Cleaning Materials,28,1,1797.95,-76.25,1721.7
+0,Electricity,23,1,1720.0,0.0,1720.0
+0,Stationery,50,1,1683.55,-4.99,1678.56
+0,ICT Licences,12,1,1613.87,0.0,1613.87
+0,Miscellaneous Expenses,11,1,1581.05,0.0,1581.05
+0,Staff Development And Training,11,1,1467.35,-264.0,1203.35
+0,Other Services,13,1,1385.7,0.0,1385.7
+0,"Clothes, Uniform And Laundry",10,1,1305.75,0.0,1305.75
+0,Catering And Vending Supplies,24,1,974.71,0.0,974.71
+0,Events,18,1,864.49,0.0,864.49
+0,Consultancy Services,5,1,787.3,0.0,787.3
+0,Vehicle Hire,2,1,659.98,0.0,659.98
+0,Fleet Management,2,1,570.0,0.0,570.0
+0,Subsistence,7,1,469.88,0.0,469.88
+0,Health And Safety Supplies And Services,12,1,431.98,0.0,431.98
+0,Printing,2,1,394.5,0.0,394.5
+0,TV Licences,2,1,360.0,0.0,360.0
+0,ICT Software,5,1,291.52,0.0,291.52
+0,Catering Equipment,5,1,285.62,0.0,285.62
+0,Eviction And Repossession Costs,8,1,280.0,-40.0,240.0
+0,Cyclical/Planned Maintenance - Building,3,1,272.6,0.0,272.6
+0,Fuel Card Expense,1,1,255.0,0.0,255.0
+0,Event Internal Charges - Staff,2,1,234.48,-2.0,232.48
+0,Catering Services,2,1,213.53,0.0,213.53
+0,ICT Hardware,4,1,188.11,0.0,188.11
+0,Premises Hire - Facilities,4,1,186.0,0.0,186.0
+0,Licences,4,1,180.98,0.0,180.98
+0,Other Vehicle Costs,3,1,173.0,0.0,173.0
+0,Mot Income,1,1,170.2,0.0,170.2
+0,Housing Repairs - Work To Void Properties,3,1,157.5,0.0,157.5
+0,"Books, Publications And Resources",1,1,155.0,0.0,155.0
+0,Bereavement  - Fees And Charges (S),4,1,146.82,0.0,146.82
+0,Hire of Hall & Premises,3,1,139.5,0.0,139.5
+0,Subcontractors,1,1,130.0,0.0,130.0
+0,Commercial Rents (Income) (B),1,1,124.0,0.0,124.0
+0,Occupational Health,1,1,106.63,0.0,106.63
+0,ICT Maintenance and Support,1,1,100.0,0.0,100.0
+0,Fire Assessment And Safety,4,1,87.1,0.0,87.1
+0,Hospitality,2,1,83.23,0.0,83.23
+0,Transport Fuel,3,1,80.04,0.0,80.04
+0,Security Of Premises,4,1,76.99,-49.0,27.99
+0,Telephone And Mobile Phone Costs,2,1,72.7,0.0,72.7
+0,Hire - Equipment Furniture And Materials,2,1,66.25,0.0,66.25
+0,Fixtures & Fittings,4,1,56.19,0.0,56.19
+0,Artist Fees,1,1,54.99,0.0,54.99
+0,Sale Of Goods And Services (S),2,1,54.9,0.0,54.9
+0,Waste Disposal Costs,1,1,40.2,0.0,40.2
+0,Legal Fees,2,1,32.0,0.0,32.0
+0,Postage And Courier Services,4,1,28.73,0.0,28.73
+0,General Office Expenses,2,1,24.57,0.0,24.57
+0,Cleaning Services,1,1,22.0,0.0,22.0
+0,Staff Recruitment Costs,1,1,21.5,0.0,21.5
+0,Staff Reward Vouchers,1,1,20.0,0.0,20.0
+0,Housing Repairs - Void Utility Costs,2,1,17.97,0.0,17.97
+0,B&B Accommodation,1,1,16.21,0.0,16.21
+0,Other Premises Related Costs,1,1,12.84,0.0,12.84
+0,Bereavement  - Fees And Charges (E),1,1,12.5,0.0,12.5
+0,Cremation And Burial Costs,1,1,12.5,0.0,12.5
+0,Consumables,1,1,6.0,0.0,6.0
+0,Pest Control,1,1,6.0,0.0,6.0
+0,Vehicle Repairs And Maintenance,1,1,0.0,-315.6,-315.6
