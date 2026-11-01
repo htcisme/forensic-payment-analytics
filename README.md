@@ -174,30 +174,6 @@ Optional arguments:
 
 The selected output directory is created if necessary. Files with matching output names are overwritten; use a separate directory to retain results from different runs. Written case reports and analysis notes are snapshot-specific and are not automatically rewritten when the dataset changes.
 
-### 7. Prepare Tableau data
-
-```powershell
-.\.venv\Scripts\python.exe src/04_prepare_tableau.py
-```
-
-Connect Tableau to `dashboard/data/tableau_transactions.csv`. It preserves one row per source record and adds the review rank, reasons and R3 context. Do not physically join this source to the many-rule alert table.
-
-### 8. Run the tests
-
-```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s tests -v
-```
-
-### One command for all automated stages
-
-After installing pandas and placing the source CSV, the following command runs steps 3–8 in order, stopping if any step fails:
-
-```powershell
-.\.venv\Scripts\python.exe src/run_all.py
-```
-
-This command does not author Tableau worksheets or update written case conclusions. Complete those tasks using the workflow below.
-
 ## Data preparation and traceability
 
 The preparation step:
@@ -306,27 +282,13 @@ The queue is ordered by rule count descending, then individual amount descending
 
 **Do not sum transaction amounts from the many-rule alert table.** Use the unique queue. R2's group total also repeats on each member row and must not be summed without deduplicating groups.
 
-## Evidence review example
+## Tableau dashboards
+![Dashboard Overview](dashboard/Dashboard_Overview.png)
+Key insights:
 
-Three written case reports are included. CASE_001 examines two same-day transport entries of £140 each. Matching date, supplier, amount and expense code were checked against page 1 of the published PDF. The cost center is present in the CSV but is not displayed on that PDF page.
-
-The review documents alternative explanations and requests for evidence that would distinguish separate legitimate purchases, publication errors and duplicate underlying payments. No external inquiry was made. Agreement between published CSV and PDF records does not independently establish that payments occurred.
-
-CASE_002 examines two £180 TV-licence entries allocated to different cost centers and explains why the wider R1 configuration groups them. CASE_003 examines a £2,180 equipment-category entry above its IQR threshold. Published fields were checked against the CSV and PDF; neither case confirms an irregular payment.
-
-## Build the Tableau dashboards and finish the written work
-
-1. Run `src/run_all.py`, or run `src/04_prepare_tableau.py` after generating the rule reports.
-2. Follow [the Tableau build guide](docs/tableau_step_by_step.md), using [the calculated fields](dashboard/calculated_fields.md).
-3. Create **01 Spend Overview** and **02 Review Queue** in Tableau.
-4. Reconcile unfiltered KPIs to `dashboard/data/tableau_validation.json`: 913 records, £74,845.31 net expenditure, 327 unique flagged records, £32,774.91 flagged value and a 35.82% flag rate.
-5. Save the validated workbook locally and export actual dashboard screenshots.
-6. Review [the analysis notes](reports/analysis_notes.md) and the three cases; update them if the snapshot or configuration changes.
-7. Follow [the completion checklist](docs/finish_project.md), then update the dashboard status and add screenshot links in this README.
-
-**Current delivery:** Code, report outputs, three written source checks, a Tableau-ready CSV and detailed authoring instructions are included. A native Tableau workbook and screenshots have not yet been created or validated. Do not mark them complete until they exist.
-
-Written analysis and cases are snapshot-specific documents. The Python pipeline does not automatically regenerate their narrative findings.
+- **Expenditure varies across observed months.** April has the highest net total (£24,327.00), while August has the lowest (£5,803.36). Monthly completeness is not established; September observations end on 20 September.
+- **Transaction frequency and spending value differ.** AMAZON records £5,412.67 across 102 entries, while AO.COM records £5,089.00 across only five. These profiles warrant different follow-up questions about routine purchasing and larger individual purchases.
+- **Rules capture complementary characteristics.** R2 selects concentrated daily activity; R3 selects large amounts relative to expense-code peers. The initial settings create a substantial review workload, not a list of confirmed frauds.
 
 ## Validation
 
